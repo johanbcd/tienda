@@ -6,6 +6,8 @@ body{
     font-family: 'Goldman', cursive;
     color: #41454f;
     font-weight: lighter;
+    background-image: url("../imagenes/marciano.jpg");
+    background-repeat: repeat;
 }
 a{
     text-decoration: none;
@@ -22,37 +24,40 @@ p{
 }
 /*Seeccion de nav*/
 .header-main-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px 30px;
-    background-color: #2d68fa;
-    color: white;
-    align-items: center;
+    
 }
-/*.header-container{
+.header-container{
     display: grid;
+    background-color: #1b3167;
     grid-template-columns: 1fr 1fr;
-}*/
+    color: white;
+    padding: 10px 0;
+    align-items: center;
+
+}
+.grid-container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
 /*Seccion logo*/
-.container-left{
-    width: 300px;
+.logo-container{
+    padding-left: 10px;
 }
 .logo-container img{
-    width: 100%;
+    width: 300px;
 }
 /*Seccion buscador*/
-.container-right{
-    display: grid;
-    grid-template-columns: 300px repeat(2,70px);
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-}
-.container-right a{
+.icon-login, .icon-cart{
     color: white;
 }
-.search-main-container{
-    width: 100%;
+.search-icons-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+.search-icons-container a{
+    margin-left: 30px;
 }
 .search-container{
     display: grid;
@@ -68,26 +73,21 @@ p{
     border-radius: 0 5px 5px 0;
     border-style: none;
     border-left-style: none;
-    background-color: #f77e29;
+    background-color: #62c027;
     outline: none;
     cursor: pointer;
     padding: 10px;
     color: white;
 }
 /*login*/
-.icon-login{
-    font-size: 20px;
-}
-.container-right p{
-    font-size: 10px;
-}
-.icon-cart{
-    font-size: 20px;
+.icon-login, .icon-cart{
+    font-size: 30px;
 }
 /*main seccion*/
 .main-container{
     display: grid;
     grid-template-columns: 250px 1fr;
+    background-color: white;
 }
 .main-container a{
     color: #41454f;
@@ -162,25 +162,27 @@ p{
 }
 /*Footer*/
 .footer-main-container{
-    background-color:   #2d68fa;
-    padding: 10px 30px;
     color: white;
+    height: 50px;
 }
 .footer-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #1b3167;
+    height: inherit;
 }
 .footer-left{
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 15px;
     text-align: center;
+    align-items: center;
 }
 .footer-left a{
     color: white;
 }
 .footer-left a:hover, .footer-right a:hover{
-    color:  #f77e29;
+    color:  #62c027;
 }
 .footer-right{
     display: grid;
@@ -278,9 +280,6 @@ seccion de pagar*/
 }
 /*media querys*/
 @media(max-width:932px){
-    .container-right{
-        grid-template-columns: 200px repeat(2,50px);
-    }
     .products-main-container{
         grid-template-columns: repeat(3,1fr);
     }
@@ -321,18 +320,16 @@ seccion de pagar*/
         max-width: 45%;
     }
 }
-@media(max-width:673px){
+@media(max-width:425px){
     .header-main-container{
         grid-template-columns: 1fr;
+        padding: 5px;
+    }
+    .search-icons-container{
+        justify-content: center;
     }
     .main-container{
         grid-template-columns: 180px 1fr;
-    }
-    .container-left{
-        width: 100%;
-    }
-    .container-right{
-        justify-content: space-evenly;
     }
     .products-main-container{
         grid-template-columns: 1fr;

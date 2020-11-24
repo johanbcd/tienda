@@ -5,130 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="icomoon/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Space Rollers</title>
 </head>
 <body>
     <header class="header-main-container">
-        <!--<section class="header-container">-->
-            <div class="container-left">
-                <div class="logo-container">
-                    <a href="index.html"><img src="space_roller.png" alt=""></a>
-                </div>
-            </div>
-            <div class="container-right">
-                <div class="search-main-container">
-                    <form action="" class="search-container">
-                        <input type="text" name="" id="" placeholder="Buscar producto">
-                        <button type="button" name="buscar">
-                            <span class="icon-search icon-search">
-                            </span>
-                        </button>
-                    </form>
-                </div>
-                <a href="#">
-                    <i class="icon-login icon-user"></i>
-                    <p>Sing in</p>
-                </a>
-                <a href="#" class="icon-cart"></a>
-            </div>
-        <!--</section>-->
+        <section class="header-container grid-container">
+            <div class="logo-container">
+            <i class="menu"></i>
+            <a href="index.html"><img src="space_roller.png" alt=""></a>
+        </div>
+        <div class="search-icons-container">
+            <form action="" class="search-container">
+                <input type="text" name="" id="" placeholder="Buscar producto">
+                <button type="button" name="buscar">
+                    <span class="icon-search icon-search">
+                    </span>
+                </button>
+            </form>
+            <a href="#">
+                <i class="icon-login icon-user"></i>
+            </a>
+            <a href="#">
+                <i class="icon-cart"></i>
+            </a>
+        </div>
+        </section>
     </header>
-    <main class="main-container">
-        <section class="menu-main">
-            <div class="categoria-container">
-                <p>Categorias</p>
-                <ul>
-                    <li><a href="index.html" type="">En liena</a></li>
-                    <li><a href="">Agresivo</a></li>
-                    <li><a href="">Sobre Hielo</a></li>
-                </ul>
-            </div>
-            <div class="options-container">
-                <p>
-                    <a href="index.html">Todos los productos</a>
-                </p>
-                <p><a href="blog.html">Blog</a></p>
-            </div>
-        </section>
-        <section class="main-products">
-            <div class="products-main-container">
-                <div class="product-container">
-                    <a href="product.html">
-                        <img src="imagenes/foto1.jpg" alt="">
-                        <div class="product-description"> 
-                            <p>USD AEON 60</p>
-                            <p>150€</p>
-                        </div>
-                    </a>
+    <main class="main">
+        <div class=" main-container grid-container">
+            <section class="menu-main">
+                <div class="categoria-container">
+                    <p>Categorias</p>
+                    <ul>
+                        <li><a href="index.html" type="">En liena</a></li>
+                        <li><a href="">Agresivo</a></li>
+                        <li><a href="">Sobre Hielo</a></li>
+                    </ul>
                 </div>
-                <div class="product-container">
-                    <a href="">
-                        <img src="imagenes/foto2.jpg" alt="">
-                        <div class="product-description"> 
-                            <p>Transformer Black</p>
-                            <p>150€</p>
-                        </div>
-                    </a>
+                <div class="options-container">
+                    <p>
+                        <a href="index.html">Todos los productos</a>
+                    </p>
+                    <p><a href="blog.html">Blog</a></p>
                 </div>
-                <div class="product-container">
-                    <a href="">
-                        <img src="imagenes/foto1.jpg" alt="">
-                        <div class="product-description"> 
-                            <p>USD AEON 60</p>
-                            <p>150€</p>
-                        </div>
-                    </a>
+            </section>
+            <section class="main-products">
+                <div class="products-main-container" id="contenido">
+                    <div class="product-container">
+                        <a href="#" id="producto" onclick="cargar('product.html','contenido')">
+                            <img src="imagenes/foto1.jpg" alt="">
+                            <div class="product-description"> 
+                                <p>USD AEON 60</p>
+                                <p>150€</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-container">
+                        <a href="">
+                            <img src="imagenes/foto2.jpg" alt="">
+                            <div class="product-description"> 
+                                <p>Transformer Black</p>
+                                <p>150€</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-container">
+                        <a href="">
+                            <img src="imagenes/foto1.jpg" alt="">
+                            <div class="product-description"> 
+                                <p>USD AEON 60</p>
+                                <p>150€</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-container">
+                        <a href="">
+                            <img src="imagenes/foto2.jpg" alt="">
+                            <div class="product-description"> 
+                                <p>Transformer Black</p>
+                                <p>150€</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-container">
+                        <a href="">
+                            <img src="imagenes/foto1.jpg" alt="">
+                            <div class="product-description"> 
+                                <p>USD AEON 60</p>
+                                <p>150€</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-container">
+                        <a href="">
+                            <img src="imagenes/foto2.jpg" alt="">
+                            <div class="product-description"> 
+                                <p>Transformer Black</p>
+                                <p>150€</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-container">
+                        <a href="">
+                            <img src="imagenes/foto1.jpg" alt="">
+                            <div class="product-description"> 
+                                <p>USD AEON 60</p>
+                                <p>150€</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-container">
+                        <a href="">
+                            <img src="imagenes/foto2.jpg" alt="">
+                            <div class="product-description"> 
+                                <p>Transformer Black</p>
+                                <p>150€</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="product-container">
-                    <a href="">
-                        <img src="imagenes/foto2.jpg" alt="">
-                        <div class="product-description"> 
-                            <p>Transformer Black</p>
-                            <p>150€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product-container">
-                    <a href="">
-                        <img src="imagenes/foto1.jpg" alt="">
-                        <div class="product-description"> 
-                            <p>USD AEON 60</p>
-                            <p>150€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product-container">
-                    <a href="">
-                        <img src="imagenes/foto2.jpg" alt="">
-                        <div class="product-description"> 
-                            <p>Transformer Black</p>
-                            <p>150€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product-container">
-                    <a href="">
-                        <img src="imagenes/foto1.jpg" alt="">
-                        <div class="product-description"> 
-                            <p>USD AEON 60</p>
-                            <p>150€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="product-container">
-                    <a href="">
-                        <img src="imagenes/foto2.jpg" alt="">
-                        <div class="product-description"> 
-                            <p>Transformer Black</p>
-                            <p>150€</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="footer-main-container">
-        <section class="footer-container">
+        <section class="footer-container grid-container">
             <div class="footer-left">
                 <p>Desarrollado por Johan Baracaldo</p>
                 <a href=""><p>Terminos & Condiciones</p></a>
@@ -147,4 +148,11 @@
         </section> 
     </footer>
 </body>
+<script type="text/javascript">
+    function cargar(url,contenedor){
+        $.get(url,{},function(data){
+            $("#"+contenedor).html(data);
+        });
+    }
+</script>
 </html>
