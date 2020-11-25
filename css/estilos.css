@@ -89,7 +89,6 @@ p{
     display: grid;
     grid-template-columns: auto 1fr;
     background-color: white;
-    height: 100vh;
 }
 .main-container a{
     color: #41454f;
@@ -199,6 +198,8 @@ seccion de pagar*/
 }
 .product-form-container{
     align-self: center;
+    justify-self: center;
+    text-align: center;
 }
 .product-size select{
     width: 50px;
@@ -209,7 +210,6 @@ seccion de pagar*/
     border-radius: 5px;
 }
 .product-fomr-pay{
-    width: 200px;
     display: grid;
 }
 .product-button-pay{
@@ -230,7 +230,6 @@ seccion de pagar*/
 }
 /*Seccion blog*/
 .post-container{
-    /*width: 300px;*/
     display: inline-block;
     padding-left: 15px;
     max-width: 31%;
@@ -298,6 +297,15 @@ seccion de pagar*/
     }
     .products-main-container{
         grid-template-columns: repeat(2,1fr);
+    }
+    .post-container{
+        max-width: 95%;
+    }
+    .product-details-container{
+        grid-template-columns: 1fr;
+    }
+    .product-img-container{
+        width: 80%;
     }
     .footer-container{
         grid-template-columns: 1fr;
