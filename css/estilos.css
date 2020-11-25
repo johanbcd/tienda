@@ -204,7 +204,7 @@ seccion de pagar*/
 .product-size select{
     width: 50px;
     padding: 3px;
-    border: 1px solid #f77e29;
+    border: 1px solid #62c027;
     outline: none;
     background: none;
     border-radius: 5px;
@@ -239,7 +239,7 @@ seccion de pagar*/
     width: 100%;
 }
 .post-container a{
-    background-color: #f77e29;
+    background-color: #62c027;
     padding: 10px 15px;
     font-size: 12px;
     color: white;
