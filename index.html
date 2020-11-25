@@ -12,8 +12,7 @@
     <header class="header-main-container">
         <section class="header-container grid-container">
             <div class="logo-container">
-            <i class="menu"></i>
-            <a href="index.html"><img src="space_roller.png" alt=""></a>
+            <a href="index.html"><img src="imagenes/logo.png" alt=""></a>
         </div>
         <div class="search-icons-container">
             <form action="" class="search-container">
@@ -35,19 +34,28 @@
     <main class="main">
         <div class=" main-container grid-container">
             <section class="menu-main">
-                <div class="categoria-container">
-                    <p>Categorias</p>
-                    <ul>
-                        <li><a href="index.html" type="">En liena</a></li>
-                        <li><a href="">Agresivo</a></li>
-                        <li><a href="">Sobre Hielo</a></li>
+                <div class="menu-container">
+                    <ul class="principal">
+                        <li>Categorías
+                            <ul class="secundario">
+                                <a href="#">
+                                    <li>En línea</li>
+                                </a>
+                                <a href="#">
+                                    <li>Agresivo</li>
+                                </a>
+                                <a href="#">
+                                    <li>Sobre hielo</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <a href="">
+                            <li>Todos los productos</li>
+                        </a>
+                        <a href="#"onclick="cargar('blog.html','contenido')">
+                            <li>Blog</li>
+                        </a>
                     </ul>
-                </div>
-                <div class="options-container">
-                    <p>
-                        <a href="#">Todos los productos</a>
-                    </p>
-                    <p><a href="#" onclick="cargar('blog.html','contenido')">Blog</a></p>
                 </div>
             </section>
             <section class="main-products" id="contenido">
