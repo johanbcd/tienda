@@ -9,12 +9,13 @@
     <title>Space Rollers</title>
 </head>
 <body>
-    <header class="header-main-container">
-        <section class="header-container grid-container">
+    <header class="header-main-container grid-container">
+        <section class="header-container">
             <div class="logo-container">
             <a href="index.html"><img src="imagenes/logo.png" alt=""></a>
         </div>
         <div class="search-icons-container">
+            <i class="icon-menu burger" id="alternar"></i>
             <form action="" class="search-container">
                 <input type="text" name="" id="" placeholder="Buscar producto">
                 <button type="button" name="buscar">
@@ -33,7 +34,7 @@
     </header>
     <main class="main">
         <div class=" main-container grid-container">
-            <section class="menu-main">
+            <section class="menu-main" id="menu">
                 <div class="menu-container">
                     <ul class="principal">
                         <li>Categorías
@@ -162,5 +163,9 @@
             $("#"+contenedor).html(data);
         });
     }
+    $('#alternar').click(function(){
+	$('#menu').toggle(1000);
+    });
 </script>
+
 </html>
