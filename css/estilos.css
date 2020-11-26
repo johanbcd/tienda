@@ -299,6 +299,9 @@ seccion de pagar*/
         font-size: 30px;
         margin-right: 15px;
     }
+    .menu-main{
+        display: none;
+    }
     .search-icons-container a{
         margin-left: 15px;
     }
