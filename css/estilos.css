@@ -6,9 +6,6 @@ body{
     font-family: 'Goldman', cursive;
     color: #41454f;
     font-weight: lighter;
-    background-image: url("../imagenes/espacio.jpg");
-    /*background-repeat: repeat;*/
-    background-size: cover;
 }
 a{
     text-decoration: none;
